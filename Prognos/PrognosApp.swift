@@ -14,6 +14,7 @@ struct PrognosApp: App {
         WindowGroup {
             HStack{
                 Text("salve leo")
+                Text("Não")
             }
             ContentView()
         }
