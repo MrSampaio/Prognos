@@ -1,14 +1,7 @@
-//
-//  ContentView.swift
-//  Prognos
-//
-//  Created by Julio Sampaio on 15/05/26.
-//
-
 import SwiftUI
 import Charts
 
-struct ContentView: View {
+struct PDFTry: View {
     
     @State var vendas2027: String = "0"
     @State var vendas2028: String = "1.2"
@@ -16,6 +9,7 @@ struct ContentView: View {
     @State var vendas2030: String = "6"
     
     var chartView: some View {
+        
         Chart {
             BarMark(x: .value("Ano", "2027"), y: .value("Vendas", Double(vendas2027) ?? 0))
                 .foregroundStyle(.red).opacity(0.5)
@@ -25,10 +19,13 @@ struct ContentView: View {
                 .foregroundStyle(.purple).opacity(0.5)
             BarMark(x: .value("Ano", "2030"), y: .value("Vendas", Double(vendas2030) ?? 0))
                 .foregroundStyle(.gray).opacity(0.5)
+            
+            
         }
         .frame(width: 350, height: 400)
         .padding()
-        .background(Color.white) // Garante que o fundo do PDF não fique preto/transparente
+        .background(Color.white)
+        
     }
     
     var body: some View {
@@ -48,7 +45,6 @@ struct ContentView: View {
                     
                 }
                 
-                // O ShareLink substitui o Button antigo
                 ShareLink(item: generatePDF()) {
                     Label("Exportar PDF", systemImage: "square.and.arrow.down")
                         .padding()
@@ -63,12 +59,11 @@ struct ContentView: View {
         }
     }
     
-    // Função para gerar o arquivo PDF e retornar a URL dele
+
     @MainActor
     func generatePDF() -> URL {
         let renderer = ImageRenderer(content: chartView)
         
-        // Define o caminho temporário no dispositivo/simulador
         let url = URL.documentsDirectory.appending(path: "GraficoVendas.pdf")
         
         renderer.render { size, context in
@@ -87,6 +82,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    // Corrigido para inicializar corretamente com os valores do State
     ContentView(vendas2027: "200", vendas2028: "302", vendas2029: "120", vendas2030: "90")
 }
