@@ -1,5 +1,6 @@
 import SwiftUI
 import Charts
+//teste anaaaaaaaaaaaa
 
 struct PDFTry: View {
     
