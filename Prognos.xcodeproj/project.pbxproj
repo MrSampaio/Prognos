@@ -6,8 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		36CC10AA2FBBAB66002E3DB6 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 36CC10A92FBBAB66002E3DB6 /* .gitignore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		36168B932FB51121008EF103 /* Prognos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Prognos.app; path = "/Users/sampaio/Documents/Challenge #2/Prognos/build/Debug/Prognos.app"; sourceTree = "<absolute>"; };
+		36CC10A92FBBAB66002E3DB6 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -32,6 +37,7 @@
 		36168B8A2FB51121008EF103 = {
 			isa = PBXGroup;
 			children = (
+				36CC10A92FBBAB66002E3DB6 /* .gitignore */,
 				36168B952FB51121008EF103 /* Prognos */,
 			);
 			sourceTree = "<group>";
@@ -100,6 +106,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36CC10AA2FBBAB66002E3DB6 /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
