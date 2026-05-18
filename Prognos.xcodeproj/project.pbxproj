@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		36168B932FB51121008EF103 /* Prognos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prognos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		36168B932FB51121008EF103 /* Prognos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Prognos.app; path = "/Users/sampaio/Documents/Challenge #2/Prognos/build/Debug/Prognos.app"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -33,16 +33,7 @@
 			isa = PBXGroup;
 			children = (
 				36168B952FB51121008EF103 /* Prognos */,
-				36168B942FB51121008EF103 /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		36168B942FB51121008EF103 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				36168B932FB51121008EF103 /* Prognos.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,7 +86,7 @@
 			mainGroup = 36168B8A2FB51121008EF103;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 36168B942FB51121008EF103 /* Products */;
+			productRefGroup = 36168B8A2FB51121008EF103;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
